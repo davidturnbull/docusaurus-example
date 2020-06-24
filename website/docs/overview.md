@@ -4,7 +4,7 @@ sidebar_label: Overview
 path: /
 ---
 
-**This is version 1.**
+**This is version 2.**
 
 One of Canva's goals is to empower the world to design. In pursuit of this goal, we allow third-party developers to create _apps_ and then distribute them to our millions of users via the [Apps Directory](https://canva.com/apps).
 
