@@ -64,6 +64,7 @@ versionDirs.forEach((versionDir, versionIndex) => {
     // Read the existing file
     const file = fs.readFileSync(filePath, 'utf8');
     let { data, content } = matter(file);
+
     // Write a new file
     const newFilePath = path.join(outputDir, slugToFilename(data.path));
     const markdown = createMarkdownDocument(data, content);
@@ -72,9 +73,10 @@ versionDirs.forEach((versionDir, versionIndex) => {
 
   console.log('[BUILDING]', versionDirPath);
 
-  const basePath = path.join(versionIndex === 0 && argv.docset, versionDir);
-  const outDir = path.join('..', 'dist', basePath);
+  // const config = require(path.join(websiteDir, 'docusaurus.config.js'));
 
+  const basePath = path.join(versionIndex === 0 ? argv.docset : '', versionDir);
+  const outDir = path.join('..', 'dist', basePath);
   const command = `yarn build --out-dir ${outDir}`;
 
   const opts = {
