@@ -16,5 +16,6 @@
 # The "production" branch is defined in Netlify
 # The default branch is "master"
 [context.production]
+    base = "/"
     command = "yarn build"
     publish = "dist"
