@@ -11,8 +11,8 @@
     "build:app-store": "node ./tools/build.js --docset app-store"
   },
   "dependencies": {
+    "@docusaurus/core": "^2.0.0-alpha.58",
     "app-root-dir": "^1.0.2",
-    "docusaurus": "^1.14.4",
     "fs-extra": "^9.0.1",
     "glob": "^7.1.6",
     "gray-matter": "^4.0.2",
