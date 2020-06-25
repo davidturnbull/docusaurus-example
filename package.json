@@ -6,6 +6,7 @@
   "author": "David Turnbull <david.t@canva.com>",
   "license": "MIT",
   "scripts": {
+    "build": "node ./tools/prebuild.js --docset=apps",
     "prebuild:app-store": "node ./tools/prebuild.js --docset app-store",
     "build:app-store": "node ./tools/build.js --docset app-store"
   },

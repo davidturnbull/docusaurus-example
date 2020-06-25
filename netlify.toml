@@ -16,5 +16,5 @@
 # The "production" branch is defined in Netlify
 # The default branch is "master"
 [context.production]
-    command = "node ./tools/prebuild.js --docset=apps"
+    command = "yarn build"
     publish = "dist"
