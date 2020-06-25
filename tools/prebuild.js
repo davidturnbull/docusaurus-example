@@ -72,10 +72,8 @@ versionDirs.forEach((versionDir, versionIndex) => {
 
   console.log('[BUILDING]', versionDirPath);
 
-  const outDir =
-    versionIndex === 0
-      ? path.join('..', 'dist', argv.docset)
-      : path.join('..', 'dist', argv.docset, versionDir);
+  const basePath = path.join(versionIndex === 0 && argv.docset, versionDir);
+  const outDir = path.join('..', 'dist', basePath);
 
   const command = `yarn build --out-dir ${outDir}`;
 
