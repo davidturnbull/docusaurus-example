@@ -13,6 +13,9 @@
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.58",
     "@docusaurus/preset-classic": "^2.0.0-alpha.58",
+    "clsx": "^1.1.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
     "app-root-dir": "^1.0.2",
     "fs-extra": "^9.0.1",
     "glob": "^7.1.6",
