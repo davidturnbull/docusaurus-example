@@ -1,0 +1,25 @@
+{
+  "name": "docusaurus-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:davidturnbull/docusaurus-example.git",
+  "author": "David Turnbull <david.t@canva.com>",
+  "license": "MIT",
+  "scripts": {
+    "prebuild:app-store": "node ./tools/prebuild.js --docset app-store",
+    "build:app-store": "node ./tools/build.js --docset app-store"
+  },
+  "dependencies": {
+    "app-root-dir": "^1.0.2",
+    "fs-extra": "^9.0.1",
+    "glob": "^7.1.6",
+    "gray-matter": "^4.0.2",
+    "lodash": "^4.17.15",
+    "prettier": "^2.0.5",
+    "remark": "^12.0.0",
+    "remark-frontmatter": "^2.0.0",
+    "to-vfile": "^6.1.0",
+    "yamljs": "^0.3.0",
+    "yargs": "^15.3.1"
+  }
+}

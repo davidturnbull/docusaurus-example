@@ -1,0 +1,20 @@
+# Process the static assets (this applies to all branches)
+[build.processing]
+    skip_processing = false
+[build.processing.css]
+    bundle = true
+    minify = true
+[build.processing.js]
+    bundle = true
+    minify = true
+[build.processing.html]
+    pretty_urls = true
+[build.processing.images]
+    compress = true
+
+# Build the current version of the documentation
+# The "production" branch is defined in Netlify
+# The default branch is "master"
+[context.production]
+    command = "node ./tools/prebuild.js --docset=apps"
+    publish = "dist"
