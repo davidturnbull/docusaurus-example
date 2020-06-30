@@ -1,6 +1,6 @@
 ---
-title: Overview
+title: "Hello world"
 path: /
 ---
 
-This is the original version.
+This is version 2.
